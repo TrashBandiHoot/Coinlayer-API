@@ -6,9 +6,9 @@ const baseUrl = 'http://api.coinlayer.com/api/';
 const listUrl = baseUrl + 'list';
 const liveUrl = baseUrl + 'live';
 
-console.log('starting')
+// console.log('starting')
 fetchCoins().then(coinDataDisplay).catch(console.error)
-console.log('finished')
+// console.log('finished')
 coins = []
 
 
@@ -48,7 +48,7 @@ function coinDataDisplay(data)
     {
         coins.push(new Crypto(coinData[key].name, coinData[key]['max_supply'], rateData[key], coinData[key]['icon_url']));
         console.log(rateData[key])
-        console.log('coins')
+        // console.log('coins')
     }
 
     coins.forEach(coin => 
@@ -73,7 +73,7 @@ function coinDataDisplay(data)
         let rateTD = document.createElement('td');
         rateTD.innerText = rate;
         tr.appendChild(rateTD);
-        console.log('coins2')
+        // console.log('coins2')
 
         tableBody.appendChild(tr);
     })
