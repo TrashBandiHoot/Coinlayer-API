@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+<title>Coinlayer API</title>
+</head>
+<body class="bg-dark">
+<!-- Navigation -->
+<div style="height: 150px;">
+    <div class="container-fluid position-relative m-0 p-0 bg-secondary bg-opacity-50 h-50">
+        <h1 class="text-white position-absolute top-50 start-50 translate-middle">Welcome to my Coinlayer API example</h1>
+    </div>
+</div>
+
+<input class="searchBox" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<div class="table-responsive text-center ms-5 me-5">
+    <table class="table table-hover table-striped table-borderless">
+        <thead class="table-dark">
+            <tr class="header">
+                <th>Logo</th>
+                <th>Name</th>
+                <th>Max Supply</th>
+                <th>Current Exchange Rate</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <!-- insert data -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

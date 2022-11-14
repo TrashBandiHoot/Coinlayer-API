@@ -1,0 +1,15 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.header {
+    border: 1px solid black;
+}
+
+
+.searchBox {
+    color: black;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
